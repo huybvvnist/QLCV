@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quản lý công việc</title>
+    <link rel="stylesheet" href="../Test/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row top_menu">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">VNIST</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Quản lý công việc</a></li>
+                            <li><a href="#">Quản lý quy trình</a></li>
+                            <li><a href="#">Quản lý KPI</a></li>
+                            <li class="active" ><a href="#">Quản lý Cơ cấu tổ chức</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-sm-4 left_content">
+                <h4 class="title">Sơ đồ cơ cấu tổ chức</h4>
+                <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu"
+                                    href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Phòng kinh tế
+                                </a>
+                                <div class="list_control">
+                                    <button class="add_unit" onclick="">+</button>
+                                    <button class="del_unit" onclick="">-</button>
+                                </div>
+
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul class="nav">
+                                    <li><a href="#" class="left_item">item 1</a>
+                                        <div class="list_control">
+                                            <button class="add_unit" onclick="">+</button>
+                                            <button class="del_unit" onclick="">-</button>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                    <li><a href="#" class="left_item">item 2</a>
+                                        <div class="list_control">
+                                            <button class="add_unit" onclick="">+</button>
+                                            <button class="del_unit" onclick="">-</button>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 right_content">
+                <div class="form-group">
+                    <label class="title">Tên đơn vị*: </label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Phòng kỹ thuật">
+                    <label class="title" style="border: none">Mô tả: </label>
+                    <textarea class="form-control" name="" id="" rows="3"></textarea>
+                    <label class="title">Trưởng đơn vị*: </label>
+                    <input class="form-control" type="search" name="" id="">
+                    <label class="title">Danh sách phó đơn vị*:</label>
+                    <div class="item">
+                        <label for="">Chọn phó đơn vị: </label>
+                        <input class="form-control" type="search" name="" id="">
+                        <label for="">Nhiệm vụ: </label>
+                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                        <div class="action_item">
+                            <button type="button" class="btn btn-success">Thêm</button>
+                            <button type="button" class="btn btn-primary">Thêm từ file</button>
+                        </div>
+                        <table class="table" class="form-control">
+                            <thead>
+                                <tr>
+                                    <th>Họ và tên</th>
+                                    <th>Nhiệm vụ</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Nguyễn Văn Kiên</td>
+                                    <td>Quản lý tài chính</td>
+                                    <td>
+                                        <div class="action_table">
+                                            <button type="button"><i class="fa fa-pencil"
+                                                    aria-hidden="true"></i></button>
+                                            <button type="reset"><i class="fa fa-trash-o"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <label class="title">Danh sách nhân viên*:</label>
+                    <div class="item">
+                        <label for="">Nhân viên*: </label>
+                        <input class="form-control" type="search" name="" id="">
+                        <label for="">Nhiệm vụ: </label>
+                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                        <div class="action_item">
+                            <button type="button" class="btn btn-success">Thêm</button>
+                            <button type="button" class="btn btn-primary">Thêm từ file</button>
+                        </div>
+                        <table class="table" class="form-control">
+                            <thead>
+                                <tr>
+                                    <th>Họ và tên</th>
+                                    <th>Nhiệm vụ</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Nguyễn Văn Kiên</td>
+                                    <td>Quản lý tài chính</td>
+                                    <td>
+                                        <div class="action_table">
+                                            <button type="button"><i class="fa fa-pencil"
+                                                    aria-hidden="true"></i></button>
+                                            <button type="reset"><i class="fa fa-trash-o"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="action_form">
+                        <button type="submit" class="btn btn-success">Lưu</button>
+                        <button type="reset" class="btn btn-primary">Hủy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+        </div>
+    </div>
+</body>
+
+</html>

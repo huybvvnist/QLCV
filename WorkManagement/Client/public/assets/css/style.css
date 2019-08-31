@@ -1,0 +1,167 @@
+/* This is the style left_content */
+.left_content button.add_department{
+    margin: 10px;
+    width: 350px;
+    background-color: #e4e5e7;
+    color: #000;
+}
+
+.left_content{
+    border: #e4e5e7 solid 2px;
+    border-right: none; 
+}
+.left_content>h4:first-child{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.left_content .list_control{
+    float: right;
+    padding-top: 9px;
+    padding-right: 5px;
+}
+
+.left_content .list_control button.add_unit{
+    background-color: #00E700;
+    border-radius: 50%;
+    border: #00E700;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+}
+
+.left_content .list_control button.del_unit{
+    background-color: #E54225;
+    border-radius: 50%;
+    border: #E54225;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+}
+
+#accordionMenu {
+    max-width: 400px;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0;
+    border-top: 0;
+    align-items: center;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.panel-default>.panel-heading a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+.panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: left;
+    padding-right: 5px;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+}
+
+.left_content li .list_control{
+    float: right;
+    padding-top: 9px;
+    padding-right: 5px;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #eee;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\e113";
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\e114";
+}
+
+.left_content .nav li a.left_item{
+    float: left;
+}
+
+.left_content .nav li .list_control{
+    float: right;
+}
+
+/* This is the style right_content */
+.right_content{
+    border: #e4e5e7 solid 2px;
+}
+
+.right_content .item{
+    border: #e4e5e7 solid 1px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.right_content .title{
+    margin-bottom: 10px;
+    padding: 3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.right_content .item:first-child{
+    border: none;
+    margin-bottom: 0px;
+}
+
+.right_content .action_form{
+    text-align: center;
+}
+
+.right_content .action_item{
+    padding: 10px;
+}
+
+.right_content .action_item button{
+    margin-left: 5px;
+}
+
+.right_content .action_form button{
+    margin-left: 5px;
+}
+
+.right_content div.action_table button{
+    background-color: #fff;
+    border: none;
+}
+
+
+
